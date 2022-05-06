@@ -1,10 +1,9 @@
-import 'dotev/config';
+import 'dotenv/config';
 
-
- export default{
+export default {
   "expo": {
-    "name": "firebase-navigatio",
-    "slug": "firebase-navigatio",
+    "name": "firebase-and-navigation",
+    "slug": "firebase-and-navigation",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -31,14 +30,14 @@ import 'dotev/config';
     "web": {
       "favicon": "./assets/favicon.png"
     },
-  },
-  "firebase": {
-    apikey: process.env.apikey,
-  AUTHDOMAIN: process.env.AUTHDOMAIN,
-  projectId: process.env.PROJECTID,
-  storageBucket: process.env. STORAGEBUCKET,
-  messagingSenderId: process.env.MESSAGINGSENDERID,
-  appId: process.env.APP_ID,
-  measurementId: process.env.MEASUREMENTID,
+    "extra": {
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
+      projectId: process.env.PROJECT_ID,
+      storageBucket: process.env.STORAGE_BUCKET,
+      messagingSenderId: process.env.MESSAGING_SENDER_ID,
+      appId: process.env.APP_ID,
+      measurementId: process.env.MEASUREMENT_ID
+    }
   }
 }
